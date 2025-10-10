@@ -55,20 +55,20 @@ reg_pred=regresion.predict(X_test)
 
 import seaborn as sns
 sns.displot(reg_pred-y_test, kind="kde")
-# plt.xlabel("Actual Values")
-# plt.ylabel("Predicted Values")
-# plt.title("Distribution of Actual vs Predicted Values")
-# plt.show()
+plt.xlabel("Actual Values")
+plt.ylabel("Predicted Values")
+plt.title("Distribution of Actual vs Predicted Values")
+plt.show()
 
 from sklearn.metrics import  r2_score
 score2=r2_score( y_test,reg_pred)
 # print("R^2 Score:", score2)
 
-# plt.scatter(y_test, reg_pred, alpha=0.3)
-# plt.xlabel("Actual Prices")
-# plt.ylabel("Predicted Prices")
-# plt.title("Actual vs Predicted House Prices")
-# plt.show()
+plt.scatter(y_test, reg_pred, alpha=0.3)
+plt.xlabel("Actual Prices")
+plt.ylabel("Predicted Prices")
+plt.title("Actual vs Predicted House Prices")
+plt.show()
 
 
 #----- Ridge Regression----
